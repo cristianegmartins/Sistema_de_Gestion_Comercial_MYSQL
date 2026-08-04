@@ -138,44 +138,44 @@ Sistema_de_Gestion_Comercial_MySQL
 
 ## Funcionalidades implementadas
 
-# Procedimientos almacenados
+### Procedimientos almacenados
 Se desarrollaron procedimientos almacenados para automatizar operaciones frecuentes, como la consulta 
 de ventas por cliente y la actualización del estado de los pedidos, centralizando la lógica de negocio dentro de la base de datos.
 
 ![Stored Procedures](Imagenes/04_stored_procedures.PNG)
 
 
-# Triggers
+### Triggers
 Se implementaron triggers para mantener la consistencia de los datos, actualizando automáticamente el importe total 
 de los pedidos cuando se insertan nuevas líneas de detalle.
 
 ![Triggers](Imagenes/05_triggers.PNG)
 
 
-# Índices
+### Índices
 Se implementaron índices para optimizar las consultas más frecuentes.
 
 ![Índices](Imagenes/03_indexes.PNG)
 
 
-# Restricciones CHECK
+### Restricciones CHECK
 Se definieron restricciones CHECK para validar los datos introducidos, garantizando que determinados campos solo acepten valores 
 permitidos y reforzando la calidad de la información almacenada.
 
 
-# Claves foráneas
+### Claves foráneas
 Se implementaron claves foráneas para establecer las relaciones entre las entidades del sistema y garantizar la consistencia de los datos mediante integridad referencial.
 
 
-# Integridad referencial
+### Integridad referencial
 El modelo impide la inserción o eliminación de registros que vulneren las relaciones entre tablas, asegurando la coherencia de la información en todas las operaciones.
 
 
-# Actualización automática de importes
+### Actualización automática de importes
 Tras la carga inicial de datos, se ejecuta un script de actualización que recalcula los importes existentes. A partir de ese momento, los triggers mantienen automáticamente los totales sincronizados con el detalle de cada pedido.
 
 
-# Consultas de negocio
+### Consultas de negocio
 Se desarrollaron varias consultas orientadas al análisis empresarial, simulando informes 
 habituales en sistemas ERP y herramientas de Business Intelligence.
 
