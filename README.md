@@ -5,18 +5,6 @@ Autor: Cristiane G. Martins
 Proyecto desarrollado como parte de mi portafolio de Data Analytics y Business Intelligence.
 
 ## Descripción
-## Objectivos
-## Caso de negocio
-## Tecnologías utilizadas
-## Modelo de Datos (ER + Tablas)
-## Reglas de Negocio
-## Estructura del proyecto (scripts SQL)
-## Estructuras de las tablas
-## Relaciones del Modelo 
-## Funcionalidades implementadas
-
-
-## Descripción
 Este proyecto consiste en el diseño e implementación de una base de datos relacional desarrollada en MySQL, orientada a la gestión de los procesos comerciales de una empresa.
 La solución integra los procesos de ventas, compras, gestión de productos, clientes, proveedores y estructura organizativa, aplicando principios de normalización, integridad referencial y buenas prácticas de modelado de datos.
 
@@ -90,14 +78,14 @@ Gestión Organizativa
 
 
 ## Reglas de Negocio  
-✔︎ Un cliente puede realizar múltiples pedidos de venta.  
-✔︎ Un proveedor puede recibir múltiples pedidos de compra.  
-✔︎ Cada pedido debe contener al menos un detalle.  
-✔︎ Cada producto pertenece a una única categoría.  
-✔︎ Cada producto tiene un proveedor principal.  
-✔︎ Cada empleado pertenece a un único departamento.  
-✔︎ Cada factura está asociada a un único pedido.  
-✔︎ El importe total de la factura se calcula como:  
+· Un cliente puede realizar múltiples pedidos de venta.  
+· Un proveedor puede recibir múltiples pedidos de compra.  
+· Cada pedido debe contener al menos un detalle.  
+· Cada producto pertenece a una única categoría.  
+· Cada producto tiene un proveedor principal.  
+· Cada empleado pertenece a un único departamento.  
+· Cada factura está asociada a un único pedido.  
+· El importe total de la factura se calcula como:  
 
 **Total = Subtotal + IVA**  
 
@@ -130,7 +118,7 @@ Sistema_de_Gestion_Comercial_MySQL
 
 ## Estructuras de las tablas
 
-![Tablas](Imagenes/02_tables.png)
+![Tablas](Imagenes/02_tables.PNG)
 
 
 ## Relaciones del Modelo  
@@ -154,20 +142,20 @@ Sistema_de_Gestion_Comercial_MySQL
 Se desarrollaron procedimientos almacenados para automatizar operaciones frecuentes, como la consulta 
 de ventas por cliente y la actualización del estado de los pedidos, centralizando la lógica de negocio dentro de la base de datos.
 
-![Stored Procedures](Imagenes/04_stored_procedures.png)
+![Stored Procedures](Imagenes/04_stored_procedures.PNG)
 
 
 # Triggers
 Se implementaron triggers para mantener la consistencia de los datos, actualizando automáticamente el importe total 
 de los pedidos cuando se insertan nuevas líneas de detalle.
 
-![Triggers](Imagenes/05_triggers.png)
+![Triggers](Imagenes/05_triggers.PNG)
 
 
 # Índices
 Se implementaron índices para optimizar las consultas más frecuentes.
 
-![Índices](Imagenes/03_indexes.png)
+![Índices](Imagenes/03_indexes.PNG)
 
 
 # Restricciones CHECK
@@ -194,17 +182,17 @@ habituales en sistemas ERP y herramientas de Business Intelligence.
 ✔︎ Top productos vendidos
 Permite identificar los productos con mayor volumen de ventas para apoyar la toma de decisiones comerciales y de inventario.
 
-![Top productos](Imagenes/06_business_query_top_productos.png                    )
+![Top productos](Imagenes/06_business_query_top_productos.PNG)
 
 
 ✔︎ Clientes con mayor facturación
 Muestra los clientes que generan un mayor volumen de ingresos, facilitando el análisis de rentabilidad y fidelización.
 
-![Clientes](Imagenes/07_business_query_clientes_facturacion.png)
+![Clientes](Imagenes/07_business_query_clientes_facturacion.PNG)
 
 
 ✔︎ Facturación mensual
 Resume la facturación por año y mes, proporcionando una visión temporal de la evolución de las ventas.
 
-![Facturación mensual](Imagenes/08_business_query_facturacion_mensual.png)
+![Facturación mensual](Imagenes/08_business_query_facturacion_mensual.PNG)
 
