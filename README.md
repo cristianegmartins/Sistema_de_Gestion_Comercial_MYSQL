@@ -179,19 +179,19 @@ Tras la carga inicial de datos, se ejecuta un script de actualización que recal
 Se desarrollaron varias consultas orientadas al análisis empresarial, simulando informes 
 habituales en sistemas ERP y herramientas de Business Intelligence.
 
-✔︎ Top productos vendidos
+✔︎ Top productos vendidos  
 Permite identificar los productos con mayor volumen de ventas para apoyar la toma de decisiones comerciales y de inventario.
 
 ![Top productos](Imagenes/06_business_query_top_productos.PNG)
 
 
-✔︎ Clientes con mayor facturación
+✔︎ Clientes con mayor facturación  
 Muestra los clientes que generan un mayor volumen de ingresos, facilitando el análisis de rentabilidad y fidelización.
 
 ![Clientes](Imagenes/07_business_query_clientes_facturacion.PNG)
 
 
-✔︎ Facturación mensual
+✔︎ Facturación mensual  
 Resume la facturación por año y mes, proporcionando una visión temporal de la evolución de las ventas.
 
 ![Facturación mensual](Imagenes/08_business_query_facturacion_mensual.PNG)
